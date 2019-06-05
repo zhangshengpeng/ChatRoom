@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5EFFFFFF</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#00574B</color>
+    <color name="eintTextView">#FFFFFF</color>
+    <color name="lucencyView">#00000000</color>
+    <color name="Textcolor">#40FFFFFF</color>
+    <color name="colorTools">#EFEFEF</color>
+    <color name="text_Msg">#8e96df</color>
+    <color name="left_textmessage">#345E66FF</color>
+    <color name="na_bar">#8e9df7</color>
+</resources>

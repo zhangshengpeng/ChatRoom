@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/inform"
+        android:title="消息" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/friend_drawable"
+        android:title="好友" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/persion_drawable"
+        android:title="我的" />
+
+</menu>

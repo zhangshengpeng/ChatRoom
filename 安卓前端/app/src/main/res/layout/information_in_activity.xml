@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+  >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/login_constraintLayout"
+        android:layout_width="266dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="120dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/username_linearLayout"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/eintTextView"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/lgin_insert"
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="154dp"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/eintTextView"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/username_linearLayout"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/in_password_LinearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="208dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@color/lucencyView"
+                android:hint="@string/use_name"
+                android:textColor="@color/eintTextView"
+                android:textColorHint="@color/eintTextView"
+                app:layout_constraintBottom_toTopOf="@+id/in_password"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView_username"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/id"
+
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/in_password_LinearLayout"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/lgoin_password"
+                android:layout_width="208dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/lucencyView"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/eintTextView"
+                android:textColorHint="@color/eintTextView"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/ic_password"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/setbar"
+            android:text="登录"
+            android:textColor="@color/eintTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="260dp"
+            android:layout_height="0.5dip"
+
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="34dp"
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="260dp"
+            android:layout_height="0.5dip"
+
+
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="20dp"
+
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/in_password_LinearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="0.5dip"
+            android:layout_marginBottom="20dp"
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/username_linearLayout"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </View>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/insert_constraintLayout"
+        android:layout_width="266dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="64dp"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="0.5dip"
+            android:layout_marginBottom="20dp"
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"></View>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/in_login"
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/eintTextView"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="154dp"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/eintTextView"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/in_username"
+                android:layout_width="208dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@color/lucencyView"
+                android:hint="@string/use_name"
+                android:textColor="@color/eintTextView"
+                android:textColorHint="@color/eintTextView"
+                app:layout_constraintBottom_toTopOf="@+id/in_password"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/id"
+
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/ic_niscname"
+                android:layout_width="208dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="1dp"
+                android:background="@color/lucencyView"
+                android:hint="@string/nickname"
+                android:textColor="@color/eintTextView"
+                android:textColorHint="@color/eintTextView"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/name"
+                tools:ignore="MissingConstraints" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/insert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/in_password"
+                android:layout_width="208dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/lucencyView"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/eintTextView"
+                android:textColorHint="@color/eintTextView"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/ic_password"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="266dp"
+            android:layout_height="40dp"
+            android:background="@drawable/setbar"
+            android:text="注册"
+            android:textColor="@color/eintTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="260dp"
+            android:layout_height="0.5dip"
+
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="34dp"
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/insert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="260dp"
+            android:layout_height="0.5dip"
+
+
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="260dp"
+            android:layout_height="0.5dip"
+
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/eintTextView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value = "MessageHistory"></dbname>
+    <version value = "2"></version>
+    <list>
+        <mapping class = "cn.edu.zjicm.toos.MessageHistory"></mapping>
+    </list>
+</litepal>

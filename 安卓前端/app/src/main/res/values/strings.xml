@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="use_name">请输入账号</string>
+    <string name="password">请输入密码</string>
+    <string name="nickname">请输入昵称</string>
+    <string name="disconnect">断开连接</string>
+    <string name="error_connect">Failed to connect</string>
+</resources>
